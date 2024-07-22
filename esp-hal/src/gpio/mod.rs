@@ -1725,7 +1725,7 @@ where
     /// Checks if the interrupt status bit for this Pin is set
     #[inline]
     fn is_interrupt_set(&self) -> bool {
-        self.pin.is_interrupt_set()
+        self.pin.is_interrupt_set(private::Internal)
     }
 
     /// Enable as a wake-up source.
